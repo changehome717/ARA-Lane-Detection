@@ -1,0 +1,107 @@
+# Angle-Aware Rectangle Anchors for Lane Detection (ARA)
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+
+This repository contains the official PyTorch implementation of *Angle-Aware Rectangle Anchors for Lane Detection: Addressing Geometric Misalignments in Anchor-based Representations*.
+
+## 📝 Introduction
+<img width="1728" height="525" alt="10 (1)" src="https://github.com/user-attachments/assets/cb4cfef2-0477-4471-b25b-72e646bc6997" />
+Lane detection methods based on line-anchors often suffer from geometric misalignments, specifically Symmetric Point Ambiguity and Magnified Localization Errors, due to continuous point sampling but discrete width and fixed directions. 
+
+To address these issues, we propose **Angle-Aware Rectangle Anchors (ARA)**, a novel representation with continuous width and adaptive directional alignment. Furthermore, we introduce the **Three-Phase Angle-Thresholded Line-Area Transition (TALAT) Loss** to dynamically switch between distance-based and area-based supervision, enabling a smooth transition from coarse to fine geometric alignment.
+
+Our method achieves state-of-the-art (SOTA) or highly competitive performance on TuSimple, CULane, CurveLanes, and LLAMAS benchmarks while maintaining real-time inference speed.
+
+
+## ⚙️ Installation
+
+### Prerequisites
+* Linux
+* Python >= 3.8
+* PyTorch >= 1.11
+* CUDA 11.3
+
+### Environment Setup
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/changehome717/ARA-Lane-Detection
+   cd ARA-Lane-Detection
+2. Create a virtual environment and install dependencies:
+   ```bash
+   conda create -n ara python=3.8 -y
+   conda activate ara
+   pip install -r requirements.txt
+   
+## 📂 Data Preparation
+
+Our model evaluates on four standard lane detection benchmarks: TuSimple, CULane, CurveLanes, and LLAMAS.
+For Tusimple, please generate segmentation annotation from the json annotation by:
+```bash
+python tools/generate_seg_tusimple.py --root $TUSIMPLEROOT
+```
+Please download the datasets from their official websites and organize them as follows:
+
+```text
+data/
+  ├── TuSimple/
+  │   ├── clips/
+  │   ├── label_data_*.json
+  │   ├── test_tasks_0627.json
+  │   ├── test_label.json.json
+  ├── CULane/
+  │   ├── driver_23_30frame/
+  │   ├── driver_161_90frame/
+  │   ├── laneseg_label_w16/
+  │   ├── list/
+  ├── CurveLanes/
+  │   ├── train/
+  │   ├── valid/
+  │   ├── test/
+  ├── LLAMAS/
+      ├── color_images/train 
+      ├── color_images/test 
+      ├── color_images/valid 
+      ├── labels/train 
+      ├── labels/valid
+
+```
+## 🚀 Model Zoo
+We provide pre-trained models for different backbones on the CULane dataset. Download the weights and place them in the weights/ directory.
+| Backbone | Dataset | mF1 (%) | F1@50 (%) | FPS | GFLOPs | Download |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| ResNet-18 | CULane | 56.97 | 81.43 | 149 | 12.0 | [Google Drive](这里填谷歌网盘链接) / [Baidu](这里填百度网盘链接) |
+| ResNet-34 | CULane | 56.50 | 81.57 | 112 | 21.5 | [Google Drive](这里填谷歌网盘链接) / [Baidu](这里填百度网盘链接) |
+| ResNet-101| CULane | 57.59 | 81.77 | 46 | 43.0 | [Google Drive](这里填谷歌网盘链接) / [Baidu](这里填百度网盘链接) |
+| DLA-34 | CULane | 57.41 | 81.92 | 102 | 18.5 | [Google Drive](这里填谷歌网盘链接) / [Baidu](这里填百度网盘链接) |
+
+
+## 🏃 Getting Started
+Training
+
+To train ARA with a specific backbone and dataset, use the provided configuration files. For example, to train the DLA-34 model on CULane:
+   ```bash
+python main.py --config configs/culane/ara_dla34.py --mode train
+```
+Evaluation
+
+To evaluate a trained model, specify the path to your downloaded weights:
+   ```bash
+python main.py --config configs/culane/ara_dla34.py --mode test --load_from weights/ara_dla34_culane.pth
+```
+
+## 📖 Citation
+If you find our work or this code helpful for your research, please consider citing our paper:
+   ```bash
+
+@article{,
+  title={},
+  author={},
+  journal={},
+  volume={...},
+  number={...},
+  year={2026}
+}
+```
+
+## 🤝 Acknowledgements
+This project is built upon the excellent work of CLRNet and LaneATT. We thank the authors for their open-source contributions.
