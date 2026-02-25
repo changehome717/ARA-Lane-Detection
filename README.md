@@ -69,10 +69,9 @@ data/
 We provide pre-trained models for different backbones on the CULane dataset. Download the weights and place them in the weights/ directory.
 | Backbone | Dataset | mF1 (%) | F1@50 (%) | FPS | GFLOPs | Download |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| ResNet-18 | CULane | 56.97 | 81.43 | 149 | 12.0 | [Google Drive](这里填谷歌网盘链接) / [Baidu](这里填百度网盘链接) |
-| ResNet-34 | CULane | 56.50 | 81.57 | 112 | 21.5 | [Google Drive](这里填谷歌网盘链接) / [Baidu](这里填百度网盘链接) |
-| ResNet-101| CULane | 57.59 | 81.77 | 46 | 43.0 | [Google Drive](这里填谷歌网盘链接) / [Baidu](这里填百度网盘链接) |
-| DLA-34 | CULane | 57.41 | 81.92 | 102 | 18.5 | [Google Drive](这里填谷歌网盘链接) / [Baidu](这里填百度网盘链接) |
+| ResNet-34 | CULane | 56.50 | 81.57 | 112 | 21.5 | [Google Drive](https://drive.google.com/file/d/1HBQGsYcWHfeSZ9ofO7ajSAY0x-FInw5d/view?usp=drive_link) / [Baidu](https://pan.baidu.com/s/1_hcShD_aR4Yw6ARML3Zc1w?pwd=zpgu) |
+| ResNet-101| CULane | 57.59 | 81.77 | 46 | 43.0 | [Google Drive](https://drive.google.com/file/d/1cdJTIZYH3kH46ujsxrE9VoSc8WAKJcrb/view?usp=drive_link) / [Baidu](https://pan.baidu.com/s/1NTaet3BICGRlNx9J7aunFw?pwd=he8p) |
+| DLA-34 | CULane | 57.41 | 81.92 | 102 | 18.5 | [Google Drive](https://drive.google.com/file/d/1tqjMnhNJT2IWw9QTE7a8JMGq4zSvkT92/view?usp=drive_link) / [Baidu](https://pan.baidu.com/s/1A5SavdEM2IoO76h-k5QcRg?pwd=et2w) |
 
 
 ## 🏃 Getting Started
@@ -105,3 +104,7 @@ If you find our work or this code helpful for your research, please consider cit
 
 ## 🤝 Acknowledgements
 This project is built upon the excellent work of CLRNet and LaneATT. We thank the authors for their open-source contributions.
+
+## 📜 License and Third-Party Notice
+This repository includes code derived from third-party open-source projects (e.g., CLRNet).  
+Please see `LICENSE`, `NOTICE`, and `THIRD_PARTY_NOTICES.md` for license texts and attribution details.
