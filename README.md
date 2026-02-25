@@ -115,5 +115,5 @@ If you find our work or this code helpful for your research, please consider cit
 This project is built upon the excellent work of CLRNet and LaneATT. We thank the authors for their open-source contributions.
 
 ## 📜 License and Third-Party Notice
-This repository includes code derived from third-party open-source projects (e.g., CLRNet).  
+This repository includes code derived from third-party open-source projects.  
 Please see `LICENSE`, `NOTICE`, and `THIRD_PARTY_NOTICES.md` for license texts and attribution details.
