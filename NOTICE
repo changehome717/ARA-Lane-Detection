@@ -1,0 +1,10 @@
+ARA Lane Detection
+
+Copyright (c) 2026 Chengzhi Hong
+
+This project includes code derived from the following open-source projects:
+- CLRNet (Apache License 2.0)
+- LaneATT (see THIRD_PARTY_NOTICES.md for license details)
+
+Modifications and refactoring have been made for the Ara project.
+See THIRD_PARTY_NOTICES.md for third-party attributions and licenses.
