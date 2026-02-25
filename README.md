@@ -34,11 +34,8 @@ Our method achieves state-of-the-art (SOTA) or highly competitive performance on
    
 ## 📂 Data Preparation
 
-Our model evaluates on four standard lane detection benchmarks: TuSimple, CULane, CurveLanes, and LLAMAS.
-For Tusimple, please generate segmentation annotation from the json annotation by:
-```bash
-python tools/generate_seg_tusimple.py --root $TUSIMPLEROOT
-```
+Our model evaluates on four standard lane detection benchmarks: [TuSimple](https://www.kaggle.com/datasets/manideep1108/tusimple?resource=download), [CULane](https://xingangpan.github.io/projects/CULane.html), [CurveLanes](https://github.com/SoulmateB/CurveLanes), and [LLAMAS](https://unsupervised-llamas.com/llamas/).
+
 Please download the datasets from their official websites and organize them as follows:
 
 ```text
@@ -63,6 +60,11 @@ data/
       ├── color_images/valid 
       ├── labels/train 
       ├── labels/valid
+
+```
+For Tusimple, please generate segmentation annotation from the json annotation by:
+```bash
+python tools/generate_seg_tusimple.py --root $TUSIMPLEROOT
 
 ```
 ## 🚀 Model Zoo
