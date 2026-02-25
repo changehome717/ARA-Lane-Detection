@@ -89,7 +89,7 @@ To evaluate a trained model, specify the path to your downloaded weights:
    ```bash
 python main.py configs/ARA/ara_culane_dla34.py --validate --load_from culane_dla34.pth --gpus 0
 ```
-## Visualization
+## 🖼️ Visualization
 
 During testing, you can save lane visualization results by enabling `--view`:
 
