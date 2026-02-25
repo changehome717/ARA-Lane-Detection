@@ -1,6 +1,6 @@
 # Angle-Aware Rectangle Anchors for Lane Detection (ARA)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)
 
 This repository contains the official PyTorch implementation of *Angle-Aware Rectangle Anchors for Lane Detection: Addressing Geometric Misalignments in Anchor-based Representations*.
 
