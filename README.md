@@ -81,13 +81,20 @@ Training
 
 To train ARA with a specific backbone and dataset, use the provided configuration files. For example, to train the DLA-34 model on CULane:
    ```bash
-python main.py --config configs/culane/ara_dla34.py --mode train
+python main.py configs/ara/ara_culane_dla34.py --gpus 0
 ```
 Evaluation
 
 To evaluate a trained model, specify the path to your downloaded weights:
    ```bash
-python main.py --config configs/culane/ara_dla34.py --mode test --load_from weights/ara_dla34_culane.pth
+python main.py configs/ARA/ara_culane_dla34.py --validate --load_from culane_dla34.pth --gpus 0
+```
+## Visualization
+
+During testing, you can save lane visualization results by enabling `--view`:
+
+```bash
+python main.py configs/ARA/ara_culane_dla34.py --validate --view --load_from culane_dla34.pth --gpus 0
 ```
 
 ## 📖 Citation
