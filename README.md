@@ -106,13 +106,13 @@ If you find our work or this code helpful for your research, please consider cit
   author={},
   journal={},
   volume={...},
-  number={...},https://github.com/cfzd/Ultra-Fast-Lane-Detection
+  number={...},
   year={2026}
 }
 ```
 ## 🤝 Acknowledgements
 This project is built upon the excellent work of [CLRNet](https://github.com/Turoad/CLRNet
-), [LaneATT](https://github.com/lucastabelini/LaneATT), [open-mmlab/mmdetection](https://github.com/open-mmlab/mmdetection) , [Turoad/lanedet](https://github.com/Turoad/lanedet), [CondLane](https://github.com/aliyun/conditional-lane-detection), [UFLD]([https://github.com/cfzd/Ultra-Fast-Lane-Detection) and [ZJULearning/resa](https://github.com/ZJULearning/resa). We thank the authors for their open-source contributions.
+), [LaneATT](https://github.com/lucastabelini/LaneATT), [open-mmlab/mmdetection](https://github.com/open-mmlab/mmdetection) , [Turoad/lanedet](https://github.com/Turoad/lanedet), [CondLane](https://github.com/aliyun/conditional-lane-detection), [UFLD](https://github.com/cfzd/Ultra-Fast-Lane-Detection) and [ZJULearning/resa](https://github.com/ZJULearning/resa). We thank the authors for their open-source contributions.
 
 ## 📜 License and Third-Party Notice
 This repository includes code derived from third-party open-source projects.  
