@@ -100,15 +100,17 @@ python main.py configs/ARA/ara_culane_dla34.py --validate --view --load_from cul
 ## 📖 Citation
 If you find our work or this code helpful for your research, please consider citing our paper:
    ```bash
+@ARTICLE{11456721,
+  author={Hong, Chengzhi and Wang, Zhuoer and Ma, Zhenqiang and Zhi, Meixia and Li, Bijun},
+  journal={IEEE Transactions on Geoscience and Remote Sensing}, 
+  title={Angle-Aware Rectangle Anchors for Lane Detection: Addressing Geometric Misalignments in Anchor-based Representations}, 
+  year={2026},
+  volume={},
+  number={},
+  pages={1-1},
+  keywords={Lane detection;Location awareness;Image segmentation;Geometry;Robustness;Object detection;Accuracy;Training;Shape;Roads;Lane detection;anchor-based representation;angle-aware rectangle anchors (ARA);geometric alignment;TALAT loss;autonomous driving},
+  doi={10.1109/TGRS.2026.3677871}}
 
-@article{,
-  title={},
-  author={},
-  journal={},
-  volume={...},
-  number={...},
-  year={2026}
-}
 ```
 ## 🤝 Acknowledgements
 This project is built upon the excellent work of [CLRNet](https://github.com/Turoad/CLRNet
